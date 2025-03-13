@@ -1,7 +1,7 @@
 <?php
 session_start();  //(vea mean ey te)
-include "../function/function.php";
 include "../config/connect.php";
+include "../function/function.php";
 
 if (isset($_POST["email"]) && isset($_POST['password'])) {
     $email = testInput($_POST["email"]);
