@@ -1,7 +1,7 @@
 <?php
 // logout
 session_start();
-include "./php/connect.php";
+include "../config/connect.php";
 if (isset($_SESSION['email']) && isset($_SESSION['id'])) {
     // endlogou
 

@@ -1,7 +1,7 @@
 <?php
 session_start();  //(vea mean ey te)
-include "./connect.php";
-include "./function.php";
+include "../function/function.php";
+include "../config/connect.php";
 
 if (isset($_POST["email"]) && isset($_POST['password'])) {
     $email = testInput($_POST["email"]);
@@ -26,13 +26,13 @@ if (isset($_POST["email"]) && isset($_POST['password'])) {
                     $_SESSION['id'] = $row['id'];
                     $_SESSION['role'] = $row['role'];
                     $_SESSION['email'] = $row['email'];
-                    header("location: ../dashboard.php");
+                    header("location: ../admin/dashboard.php");
                 } else {
                     $_SESSION['name'] = $row['name'];
                     $_SESSION['id'] = $row['id'];
                     $_SESSION['role'] = $row['role'];
                     $_SESSION['email'] = $row['email'];
-                    header('location: ../dashboard.php');
+                    header('location: ../admin/dashboard.php');
                 }
             } else {
                 header('location: ../index.php');

@@ -110,7 +110,7 @@ if (!isset($_SESSION['email']) && !isset($_SESSION['password'])) {
                         </div>
                         <div class="row mt-2">
                             <div class="col-12">
-                                <form action="./php/login_code.php" method="post" class="tm-login-form">
+                                <form action="../middeware/login_code.php" method="post" class="tm-login-form">
                                     <div class="form-group">
                                         <label for="email">Email</label>
                                         <input
